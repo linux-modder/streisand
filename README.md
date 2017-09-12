@@ -106,7 +106,7 @@ Complete all of these tasks on your local home machine.
         sudo apt-get install git
   * On Fedora
 
-        sudo yum install git
+        sudo dnf install git
   * On OS X (via [Homebrew](http://brew.sh/))
 
         brew install git
@@ -116,7 +116,7 @@ Complete all of these tasks on your local home machine.
         sudo apt-get install python-paramiko python-pip python-pycurl python-dev build-essential
   * On Fedora
 
-        sudo yum install python-pip
+        sudo dnf install python2-pip
   * On OS X
 
         sudo easy_install pip
@@ -141,7 +141,7 @@ Complete all of these tasks on your local home machine.
   * DigitalOcean
 
         sudo pip install dopy==0.3.5
-  * Google
+  * Google Compute Engine
 
         sudo pip install "apache-libcloud>=1.5.0"
 
@@ -151,7 +151,7 @@ Complete all of these tasks on your local home machine.
   * Rackspace Cloud
 
         sudo pip install pyrax
-  * **Important note if you are using a Homebrew-installed version of Python** you should also run these commands to make sure it can find the necessary libraries:
+  * **Important note if you are using a Homebrew-installed version of Python** you should also run these commands to make sure it can find the necessary libraries: (MacOSX/BSD Only)
 
         mkdir -p ~/Library/Python/2.7/lib/python/site-packages
         echo '/usr/local/lib/python2.7/site-packages' > ~/Library/Python/2.7/lib/python/site-packages/homebrew.pth
@@ -170,6 +170,8 @@ Complete all of these tasks on your local home machine.
 3. Follow the prompts to choose your provider, the physical region for the server, and its name. You will also be asked to enter API information.
 4. Once login information and API keys are entered, Streisand will begin spinning up a new remote server.
 5. Wait for the setup to complete (this usually takes around ten minutes) and look for the corresponding files in the 'generated-docs' folder in the Streisand repository directory. The HTML file will explain how to connect to the Gateway over SSL, or via the Tor hidden service. All instructions, files, mirrored clients, and keys for the new server can then be found on the Gateway. You are all done!
+
+Note:  For those users with ssh git access setup s\https://\git@/g
 
 ### Running Streisand to Provision Localhost (Advanced) ###
 
